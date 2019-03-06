@@ -1,0 +1,279 @@
+/*@import url("./3.1.css") screen and(min-width: 360px)
+ and (max-device-width: 720px);*/
+*{
+	padding:0;
+	margin:0;
+}
+.header{
+	
+	margin:0 auto;
+	background-color:gray;
+}
+.middle{
+	
+	margin:0 auto;
+
+    overflow:hidden;
+}
+.footer{
+	height:50px;
+	background-color:#000000;
+	
+}
+.nav{
+	/*float:left;*/
+	font-size:18px;
+	margin:30px auto;
+    width:700px;
+    height:120px;
+    
+}
+.nav ul{
+	/*padding-left:500px;*/
+}
+.nav ul li{
+	float:left;
+	font-family:"宋体";
+	/*text-align:center;*/
+	font-weight:bold;
+	list-style:none;
+    width:50px;
+    height:100px;
+    line-height:100px;
+    display:block;
+}
+
+.middle .m{
+	
+	margin:50px auto;
+	text-align:center;
+    
+    /*display:flex;*/
+    /*padding-top:0;*/
+    
+}
+.middle .m img{
+	width:230px;
+	height:250px;
+	display:block;
+    font-family:"隶书";
+    /*margin:0 auto;*/
+
+}
+.middle .m p{
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+.middle .m1{
+	/*flex:1;*/
+	display:inline-block;
+}
+.middle .m2{
+	/*flex:1;*/
+	display:inline-block;
+}
+.middle .m3{
+	/*flex:1;*/
+	display:inline-block;
+}
+.text2{
+	text-align:center;
+	line-height:50px;
+	font-family:"宋体";
+	color:#eee;
+	
+}
+/*.tilte{
+	width:700px;
+	margin:auto;
+	
+}
+.search{
+	
+	border-radius:5px;
+	
+	background-color:#eee;
+	opacity:0.5;
+	
+}
+.text3{
+	background-color:#eee;
+	border-radius:5px;
+	width:100px;
+	opacity:0.5;
+	text-align:center;
+	
+}*/
+
+.btn_group{
+	position:relative;
+	height:100px;
+	width:700px;
+	margin:10px auto;
+	overflow:hidden;
+}
+.btn_group .zan{
+	font-size:5px;
+	position:absolute;
+    left:100px;
+}
+.zan img{
+	width:30px;
+	height:30px;
+}
+.btn_group .comment_container{
+	position:absolute;
+	left:320px;
+}
+.comment_container img{
+	width:30px;
+	height:30px;
+}
+.btn_group .like_count{
+	width:100px;
+	height:30px;
+	font-size:13px;
+	position:absolute;
+	right:100px;
+}
+.main{
+	width:700px;
+	margin:5px auto;
+}
+.main .text4{
+	text-indent:15px;
+}
+/*.comment_operation{
+	width:100%;
+}*/
+.comment_operation textarea{
+	background-color:#eee;
+	border-radius:5px;
+	/*width:100%;*/
+	height:100px;
+	opacity:0.5;
+	display:none;
+	margin-top:20px;
+}
+.comment_operation .report{
+	margin-top:10px;
+	opacity:0.5;
+	display:none;
+	float:right;
+}
+
+.commentShow .comment_list{
+	margin-top:20px;
+}
+.commentShow .comment_theme{
+	position:relative;
+	overflow:hidden;
+}
+.comment_theme .comment_name{
+	font-family:"宋书";
+	font-size:20px;
+}
+	
+.comment_theme .comment_time{
+    position:absolute;
+    right:0;
+}
+.comment_display{
+	position:relative;
+	/*min-height:250px;*/
+	margin:20px auto;
+	/*overflow:hidden;*/
+	clear:both;
+}
+.comment_display .comment_content{
+	font-family:"宋体";
+}
+.comment_display .comment_remain{
+   font-family:"黑体";
+   position:absolute;
+   left:300px;
+   top:100%;
+}
+
+@media screen and (min-width: 360px) and (max-width: 720px){
+	.middle .nav{
+		padding-left:20px;
+	}
+	.middle .nav li{
+		font-size:25px;
+		font-weight:bold;
+	}
+	.middle .m{
+		float:left;
+		position:relative;
+		left:30%;
+       
+	}
+	.middle .m1, .middle .m2, .middle .m3{
+		display:block;
+		margin:0 auto;
+        
+	}
+	.middle .m p{
+		font-size:25px;
+
+	}
+	.btn_group{
+		position:relative;
+		height:100px;
+		width:100%;
+		margin:10px auto;
+		overflow:hidden;
+		
+	}
+	/*分辨率减少时，减小icon的大小*/
+	.zan img{
+		width:25px;
+		height:25px;
+	}
+	/*分辨率减少时，减小icon的大小*/
+	.comment_container img{
+		width:25px;
+		height:25px;
+	}
+	/*-----btn-group-----*/
+	.btn_group .zan{
+		position:absolute;
+        left:15%;
+	}
+	.btn_group .comment_container{
+		position:absolute;
+		left:50%;
+	}
+	.btn_group .like_count{
+		width:80px;
+		height:30px;
+		font-size:10px;
+		position:absolute;
+        right:5%;
+	}
+	.main{
+		width:80%;
+	}
+	.main .text4{
+		font-size:25px;
+	}
+    .comment_theme .comment_name,.comment_time{
+		font-size:20px;
+	}
+	.comment_display{
+		font-size:25px;
+		margin:50px auto;
+
+	}
+	/*--查看更多评论--*/
+	.comment_display .comment_remain{
+		 position:absolute;
+		 left:30%;
+		 top:100%;
+	}
+	.text2{
+		font-size:25px;
+	}
+}
